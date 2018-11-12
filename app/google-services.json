@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "170626759360",
+    "firebase_url": "https://android-push-8f5d9.firebaseio.com",
+    "project_id": "android-push-8f5d9",
+    "storage_bucket": "android-push-8f5d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:170626759360:android:f76429829a4e9db5",
+        "android_client_info": {
+          "package_name": "org.hopto.wbj.androidpush"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "170626759360-8md9kl6mci6lsr58o1cv805mranjqisi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDr_29Vqx6pUETpePQxJCgPn47kusDU1w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
