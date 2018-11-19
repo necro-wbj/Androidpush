@@ -9,6 +9,8 @@ import android.util.Log;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
+import java.util.Map;
+
 public class MyFirebaseMessagingService extends FirebaseMessagingService {
     final String TAG = "necro-wbj";
     @Override
@@ -18,7 +20,11 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
             // Check if message contains a data payload.
             if (remoteMessage.getData().size() > 0) {
                 Log.d(TAG, "data訊息(payload): " + remoteMessage.getData());
-
+                Map<String,String> data = remoteMessage.getData();
+                for (String k : data.keySet()){ //類似於python的for k in bd.keySet(): 寫法
+                    Object v= data.get(k);
+                    Log.d(TAG,"收到推播資料中的: "+"key = "+k + "\tvalue = "+v);
+                }
                 //TODO: 處理Data訊息
             }
 
